@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import { TrafficLightWithHook } from "./02-useEffect/TrafficLightWithHook";
-import { PokemonPage } from "./03-examples/PokemonPage";
+// import { PokemonPage } from "./03-examples/PokemonPage";
+import { FocusScreen } from "./04-useRef/FocusScreen";
 
 // import { HooksApp } from "./HooksApp";
 // import { TrafficLight } from "./01-useState/TrafficLight";
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
     {/* <TrafficLight /> */}
     {/* <TrafficLightWithEffect /> */}
     {/* <TrafficLightWithHook /> */}
-    <PokemonPage />
+    {/* <PokemonPage /> */}
+    <FocusScreen />
   </StrictMode>,
 );
