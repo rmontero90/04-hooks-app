@@ -1,4 +1,4 @@
-import { useState, useReducer } from "react";
+import { useState, useReducer, useEffect } from "react";
 
 import { Plus, Trash2, Check } from "lucide-react";
 
@@ -13,6 +13,10 @@ export const TasksApp = () => {
   const [inputValue, setInputValue] = useState("");
 
   const [state, dispatch] = useReducer(taskReducer, getTasksInitialState());
+
+  useEffect(() => {
+    localStorage.setItem("tasks-state", JSON.stringify(state));
+  }, [state]);
 
   const addTodo = () => {
     if (inputValue.length === 0) return;
@@ -35,12 +39,7 @@ export const TasksApp = () => {
     }
   };
 
-  const {
-    todos,
-    completed: completedCount,
-    pending,
-    length: totalCount,
-  } = state;
+  const { todos, completed: completedCount, length: totalCount } = state;
 
   // const completedCount = todos.filter((todo) => todo.completed).length;
   // const totalCount = todos.length;
