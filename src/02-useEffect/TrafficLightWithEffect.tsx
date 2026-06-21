@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useEffectEvent, useState } from "react";
 
 const colors = {

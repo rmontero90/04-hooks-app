@@ -4,16 +4,21 @@ import { createRoot } from "react-dom/client";
 // import { PokemonPage } from "./03-examples/PokemonPage";
 // import { FocusScreen } from "./04-useRef/FocusScreen";
 // import { TasksApp } from "./05-useReducer/TaskApp";
-import { ScrambleWords } from "./05-useReducer/ScrambleWords";
+// import { ScrambleWords } from "./05-useReducer/ScrambleWords";
 
 // import { HooksApp } from "./HooksApp";
 // import { TrafficLight } from "./01-useState/TrafficLight";
 
 import "./index.css";
+import { InstagramApp } from "./07-useOptimistic/InstagramApp";
+// import { MemoCounter } from "./06-memos/MemoCounter";
+// import { MemoHook } from "./06-memos/MemoHook";
 // import { TrafficLightWithEffect } from "./02-useEffect/TrafficLightWithEffect";
+import { Toaster } from "sonner";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
+    <Toaster />
     {/* <HooksApp /> */}
     {/* <TrafficLight /> */}
     {/* <TrafficLightWithEffect /> */}
@@ -21,6 +26,9 @@ createRoot(document.getElementById("root")!).render(
     {/* <PokemonPage /> */}
     {/* <FocusScreen /> */}
     {/* <TasksApp /> */}
-    <ScrambleWords />
+    {/* <ScrambleWords /> */}
+    {/* <MemoHook /> */}
+    {/* <MemoCounter /> */}
+    <InstagramApp />
   </StrictMode>,
 );
