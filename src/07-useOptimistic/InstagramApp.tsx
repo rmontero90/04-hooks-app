@@ -39,13 +39,13 @@ export const InstagramApp = () => {
     startTransition(async () => {
       await new Promise((resolve) => setTimeout(resolve, 3000));
 
-      //  setComments((prev) => [
-      //     ...prev,
-      //     {
-      //       id: new Date().getTime(),
-      //       text: messageText,
-      //     },
-      //   ]);
+      // setComments((prev) => [
+      //   ...prev,
+      //   {
+      //     id: new Date().getTime(),
+      //     text: messageText,
+      //   },
+      // ]);
 
       // Error case
       setComments((prev) => prev);

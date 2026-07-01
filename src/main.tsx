@@ -15,8 +15,9 @@ import "./index.css";
 // import { MemoHook } from "./06-memos/MemoHook";
 // import { TrafficLightWithEffect } from "./02-useEffect/TrafficLightWithEffect";
 import { Toaster } from "sonner";
-import { ClientInformation } from "./08-use-suspense/ClientInformation";
-import { getUserAction } from "./08-use-suspense/api/get-user.action";
+import { ProfessionalApp } from "./09-useContext/ProfessionalApp";
+// import { ClientInformation } from "./08-use-suspense/ClientInformation";
+// import { getUserAction } from "./08-use-suspense/api/get-user.action";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -32,7 +33,7 @@ createRoot(document.getElementById("root")!).render(
     {/* <MemoHook /> */}
     {/* <MemoCounter /> */}
     {/* <InstagramApp /> */}
-    <Suspense
+    {/* <Suspense
       fallback={
         <div className="bg-gradient flex flex-col">
           <h1 className="text-2xl">Cargando...</h1>
@@ -40,6 +41,7 @@ createRoot(document.getElementById("root")!).render(
       }
     >
       <ClientInformation getUser={getUserAction(2000)} />
-    </Suspense>
+    </Suspense> */}
+    <ProfessionalApp />
   </StrictMode>,
 );

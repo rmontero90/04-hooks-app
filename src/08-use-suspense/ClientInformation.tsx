@@ -1,4 +1,4 @@
-import { use, useEffect, type Usable } from "react";
+import { use, type Usable } from "react";
 import { type User } from "./api/get-user.action";
 
 interface Props {
